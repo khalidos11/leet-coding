@@ -27,12 +27,12 @@ bool isCousins(struct TreeNode* root, int x, int y){
     int depthx = 0, depthy = 0;
     
     // Find the element and depth for the first element
-    parentx = findParent(root, x, depth);
-    depthx = findDepth(root, x, depth);
+    parentx = findParent(root, x);
+    depthx = findDepth(root, x);
     
     // Find the element and depth for second element
-    parenty = findParent(root, y, depth);
-    depthy = findDepth(root, y, depth);
+    parenty = findParent(root, y);
+    depthy = findDepth(root, y);
     
     // Checking conditions
     if (parentx != NULL && parenty != NULL)
@@ -61,7 +61,7 @@ struct TreeNode *findParent(struct TreeNode* root, int num)
         else
         {   // recursive call to return NULL if not found or pointer if found
             struct TreeNode *result = NULL;
-            result = findParent(traversal->left, nuM);
+            result = findParent(traversal->left, num);
             if (result != NULL) 
                 return result;
         }
