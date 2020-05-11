@@ -1,2 +1,2 @@
 # leet-coding
-This contains the C codes written on Leet Code.
+This contains the C solutions to the problems on Leet Code.
