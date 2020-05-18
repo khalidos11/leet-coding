@@ -11,6 +11,10 @@
   Return the operations to build the target array.
 
   You are guaranteed that the answer is unique.
+  
+  Runtime: 0ms
+  Memory: 5.9MB
+  Top 100% of C submissions
 */
 
 #include <string.h>
