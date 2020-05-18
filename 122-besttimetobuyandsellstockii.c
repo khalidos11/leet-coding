@@ -4,6 +4,10 @@
   Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
 
   Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+  
+  Runtime: 4ms
+  Memory: 6.5MB
+  Top 88.07% of C submissions
 */
 
 int maxProfit(int* prices, int pricesSize){
