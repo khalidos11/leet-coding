@@ -3,7 +3,7 @@ Given a string, find the first non-repeating character in it and return it's ind
 
 Runtime: 8ms
 Memory: 6.6MB
-Top 88.63% of C submission
+Top 88.63% of C submissions
 */
 
 int firstUniqChar(char * s){
