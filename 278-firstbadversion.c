@@ -10,7 +10,7 @@ bool isBadVersion(int version);
 
 Runtime: 0ms
 Memory: 5.2MB
-Top 100% of C submission
+Top 100% of C submissions
 **/
 
 int firstBadVersion(int n) {
