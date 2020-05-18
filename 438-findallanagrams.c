@@ -6,31 +6,42 @@
   The order of output does not matter.
 */
 
+
+
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+
+
 #include <string.h>
+int primes[26] = {2, 5, 11, 17, 23, 31, 41, 47, 59, 71, 79, 89, 101, 107, 113, 131, 139, 151, 163, 173, 181, 191, 197, 211, 227, 233};
 
 int findSum(char *string, int substringLength);
 
 int* findAnagrams(char * s, char * p, int* returnSize){
-    if (s == NULL) {*returnSize = 0; return NULL;}
+    // error condition
+    if (strlen(s) < strlen(p)) {*returnSize = 0; return NULL;}
     
     int substringLength = strlen(p), index = 0, substringSum = findSum(p, substringLength), stringLength = strlen(s);
+    char *startPointer = s, *endPointer = (s + substringLength);
     int* returnArray = (int *)malloc(stringLength * sizeof(int));
-    char* firstCharacter = s;
     
-    for (int i = 0; i < stringLength - substringLength + 1; i++, s++)
+    int currentSum = findSum(s, substringLength);
+    for (int i = 0; i < stringLength - substringLength + 1; i++, startPointer++, endPointer++)
     {
-        int currentSum = findSum(s, substringLength);
         if (currentSum == substringSum)
         {
             returnArray[index] = i;
             index++;
         }
+        currentSum -= primes[*startPointer - 'a'];
+        if (*endPointer != '\0') currentSum += primes[*endPointer - 'a'];
+        else break;
     }
     *returnSize = index;
     return returnArray;
 }
 
-int primes[26] = {2, 5, 11, 17, 23, 31, 41, 47, 59, 71, 79, 89, 101, 107, 113, 131, 139, 151, 163, 173, 181, 191, 197, 211, 227, 233};
 int findSum(char *string, int substringLength)
 {
     int sum = 0;
