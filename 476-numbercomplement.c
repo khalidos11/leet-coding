@@ -1,5 +1,9 @@
 /*
 Given a positive integer num, output its complement number. The complement strategy is to flip the bits of its binary representation.
+
+Runtime: 0ms
+Memory: 5.1MB
+Top 100% of C submission
 */
 
 int findComplement(int num){
