@@ -2,6 +2,10 @@
 Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
 
 Each letter in the magazine string can only be used once in your ransom note.
+
+Runtime: 4ms
+Memory: 6.3MB
+Top 91.46% of C submissions
 */
 
 bool canConstruct(char * ransomNote, char * magazine){

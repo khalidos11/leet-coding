@@ -7,6 +7,10 @@ You are given an API bool isBadVersion(version) which will return whether versio
 
 The API isBadVersion is defined for you.
 bool isBadVersion(int version);
+
+Runtime: 0ms
+Memory: 5.2MB
+Top 100% of C submissions
 **/
 
 int firstBadVersion(int n) {
