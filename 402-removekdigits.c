@@ -4,6 +4,10 @@
   Note:
   The length of num is less than 10002 and will be ≥ k.
   The given num does not contain any leading zero.
+  
+ Runtime: 0ms
+ Memory: 5.8MB
+ Top 100% of C submissions
 */
 
 #include <string.h>
