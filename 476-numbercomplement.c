@@ -3,7 +3,7 @@ Given a positive integer num, output its complement number. The complement strat
 
 Runtime: 0ms
 Memory: 5.1MB
-Top 100% of C submission
+Top 100% of C submissions
 */
 
 int findComplement(int num){
