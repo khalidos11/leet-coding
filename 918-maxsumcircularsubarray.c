@@ -1,5 +1,9 @@
 /*
   Given a circular array C of integers represented by A, find the maximum possible sum of a non-empty subarray of C.
+  
+  Runtime: 56ms
+  Memory: 8.2MB
+  Top 88.32% of C submissions
 */
 
 int max (int a, int b);
