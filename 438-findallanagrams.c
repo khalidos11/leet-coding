@@ -4,6 +4,10 @@
   Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
 
   The order of output does not matter.
+  
+  Runtime: 16ms
+  Memory: 9.1MB
+  Top 100% of C submissions
 */
 
 
