@@ -5,7 +5,7 @@ The letters in J are guaranteed distinct, and all characters in J and S are lett
 
 Runtime: 0ms
 Memory: 5.1MB
-Top 100% of C submission
+Top 100% of C submissions
 */
 
 int numJewelsInStones(char * J, char * S){
