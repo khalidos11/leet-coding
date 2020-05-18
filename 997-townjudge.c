@@ -9,6 +9,10 @@
   You are given trust, an array of pairs trust[i] = [a, b] representing that the person labelled a trusts the person labelled b.
 
   If the town judge exists and can be identified, return the label of the town judge.  Otherwise, return -1.
+  
+  Runtime: 164ms
+  Memory: 16.8MB
+  Top 50.09% of C submissions
 */
 
 int findJudge(int N, int** trust, int trustSize, int* trustColSize){
