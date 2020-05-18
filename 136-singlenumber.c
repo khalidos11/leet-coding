@@ -4,6 +4,11 @@
   Note:
 
   Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+  
+  
+  Runtime: 8ms
+  Memory: 6.6MB
+  Top 94.42% of C submissions
 */
 
 int singleNumber(int* nums, int numsSize){
