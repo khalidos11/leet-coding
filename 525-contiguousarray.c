@@ -14,7 +14,7 @@ struct runningSum
 
 int findMaxLength(int* nums, int numsSize){
     int countSize = numsSize + 1;
-    struct runningSum* count = malloc((numsSize + 1) * sizeof(struct runningSum));
+    struct runningSum* count = malloc((countSize) * sizeof(struct runningSum));
     memset(count, -1, countSize * sizeof(struct runningSum));
     count[0].firstIndex = 0;
     
